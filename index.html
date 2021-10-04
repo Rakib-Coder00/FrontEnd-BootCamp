@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
     <!-- mapbox api CDN  -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
 
     <!-- custom CSS link -->
     <link rel="stylesheet" href="style.css" />
@@ -61,7 +61,56 @@
                         eos saepe recusandae culpa at repellat aut, dolores,sunt
                         consequuntur!
                     </p>
-                    <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                        Start The Enrollment
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade text-dark" id="enroll" tabindex="-1" aria-labelledby="enrollLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="enrollLabel">enrollment</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead">fill out this form and we'll back to you</p>
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">name</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </form>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
+                                        Save changes
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" />
             </div>
@@ -91,54 +140,51 @@
         <div class="container">
             <div class="row text-center g-4">
                 <div class="col-md">
-
                     <div class="card bg-dark text-light">
                         <div class="card-body text-center">
-                            <div class="h1 mb-3"><i class="bi bi-laptop"></i>
-                            </div>
+                            <div class="h1 mb-3"><i class="bi bi-laptop"></i></div>
                         </div>
                         <h3 class="card-title mb-3">virtual</h3>
                         <p class="card-text text-muted mx-2">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
                             dolorum unde rerum?
                         </p>
-                        <button href="#" class="btn btn-primary text-center m-auto mb-3" style="width: 8rem;">Read More</button>
+                        <button href="#" class="btn btn-primary text-center m-auto mb-3" style="width: 8rem">
+                            Read More
+                        </button>
                     </div>
-
                 </div>
 
                 <div class="col-md">
-
                     <div class="card bg-secondary text-light">
                         <div class="card-body text-center">
-                            <div class="h1 mb-3"><i class="bi bi-person-square"></i>
-                            </div>
+                            <div class="h1 mb-3"><i class="bi bi-person-square"></i></div>
                         </div>
                         <h3 class="card-title mb-3">hybrid</h3>
                         <p class="card-text mx-2">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
                             dolorum unde rerum?
                         </p>
-                        <button href="#" class="btn btn-dark text-center m-auto mb-3" style="width: 8rem;">Read More</button>
+                        <button href="#" class="btn btn-dark text-center m-auto mb-3" style="width: 8rem">
+                            Read More
+                        </button>
                     </div>
-
                 </div>
 
                 <div class="col-md">
-
                     <div class="card bg-dark text-light">
                         <div class="card-body text-center">
-                            <div class="h1 mb-3"><i class="bi bi-person"></i>
-                            </div>
+                            <div class="h1 mb-3"><i class="bi bi-person"></i></div>
                         </div>
                         <h3 class="card-title mb-3">in person</h3>
                         <p class="card-text text-muted mx-2">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
                             dolorum unde rerum?
                         </p>
-                        <button href="#" class="btn btn-primary text-center m-auto mb-3" style="width: 8rem;">Read More</button>
+                        <button href="#" class="btn btn-primary text-center m-auto mb-3" style="width: 8rem">
+                            Read More
+                        </button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -150,12 +196,20 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md">
-                    <img class="img-fluid" src="img/fundamentals.svg" alt="">
+                    <img class="img-fluid" src="img/fundamentals.svg" alt="" />
                 </div>
                 <div class="col-md p-5">
                     <h2 class="">learn the fundamentals</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est sapiente dolor?</p>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque error odio quidem laudantium quia, voluptas aut pariatur nisi ipsam facere, consequuntur nemo minima, dolores exercitationem. Eum autem aut sapiente.</p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                        est sapiente dolor?
+                    </p>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                        cumque error odio quidem laudantium quia, voluptas aut pariatur
+                        nisi ipsam facere, consequuntur nemo minima, dolores
+                        exercitationem. Eum autem aut sapiente.
+                    </p>
                     <a href="#" class="btn bg-primary text-light"><i class="bi bi-chevron-right"></i> read more</a>
                 </div>
             </div>
@@ -169,12 +223,20 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-5">
                     <h2 class="">learn the fundamentals</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est sapiente dolor?</p>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque error odio quidem laudantium quia, voluptas aut pariatur nisi ipsam facere, consequuntur nemo minima, dolores exercitationem. Eum autem aut sapiente.</p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                        est sapiente dolor?
+                    </p>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                        cumque error odio quidem laudantium quia, voluptas aut pariatur
+                        nisi ipsam facere, consequuntur nemo minima, dolores
+                        exercitationem. Eum autem aut sapiente.
+                    </p>
                     <a href="#" class="btn bg-primary text-light"><i class="bi bi-chevron-right"></i> read more</a>
                 </div>
                 <div class="col-md">
-                    <img class="img-fluid" src="img/react.svg" alt="">
+                    <img class="img-fluid" src="img/react.svg" alt="" />
                 </div>
             </div>
         </div>
@@ -188,61 +250,103 @@
             <div class="accordion accordion-flush" id="ques">
                 <!-- item 1 -->
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Where Exactly  Located ?
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#ques">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                  </div>
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Where Exactly Located ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#ques">
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the
+                            first item's accordion body.
+                        </div>
+                    </div>
                 </div>
                 <!-- item 2 -->
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      How Much Cost?
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#ques">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                  </div>
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How Much Cost?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#ques">
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the
+                            second item's accordion body. Let's imagine this being filled
+                            with some actual content.
+                        </div>
+                    </div>
                 </div>
                 <!-- item 3 -->
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      What Do I Need To Know?
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#ques">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                  </div>
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            What Do I Need To Know?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#ques">
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the
+                            third item's accordion body. Nothing more exciting happening
+                            here in terms of content, but just filling up the space to make
+                            it look, at least at first glance, a bit more representative of
+                            how this would look in a real-world application.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- item 4 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        How Do I Sign Up?
-                      </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            How Do I Sign Up?
+                        </button>
                     </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#ques">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#ques">
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the
+                            third item's accordion body. Nothing more exciting happening
+                            here in terms of content, but just filling up the space to make
+                            it look, at least at first glance, a bit more representative of
+                            how this would look in a real-world application.
+                        </div>
                     </div>
-                  </div>
-                  <!-- item 5 -->
-                  <div class="accordion-item">
+                </div>
+                <!-- item 5 -->
+                <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        Do You Help Me Find Job?
-                      </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Do You Help Me Find Job?
+                        </button>
                     </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#ques">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#ques">
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the
+                            third item's accordion body. Nothing more exciting happening
+                            here in terms of content, but just filling up the space to make
+                            it look, at least at first glance, a bit more representative of
+                            how this would look in a real-world application.
+                        </div>
                     </div>
-                  </div>
-
+                </div>
             </div>
         </div>
     </section>
@@ -252,16 +356,20 @@
     <section id="instructor" class="p-5 bg-primary">
         <div class="container">
             <h2 class="text-center text-white">Our instructor</h2>
-            <p class="lead text-center text-white">our instructor all have 5+ years working as developer in the industry</p>
+            <p class="lead text-center text-white">
+                our instructor all have 5+ years working as developer in the industry
+            </p>
         </div>
         <div class="row g-4">
-            
             <div class="col-md-6 col-lg-3">
                 <div class="card bg-light">
                     <div class="card-body text-center">
-                        <img class="rounded-circle mb-3" src="img/pic-2.png" alt="">
+                        <img class="rounded-circle mb-3" src="img/pic-2.png" alt="" />
                         <h3 class="card-title mb-3">jennifer lawrance</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, officiis? Architecto</p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                            officiis? Architecto
+                        </p>
                         <a href="#" class="i bi bi-twitter text-dark mx-1"></a>
                         <a href="#" class="i bi bi-facebook text-dark mx-1"></a>
                         <a href="#" class="i bi bi-linkedin text-dark mx-1"></a>
@@ -272,9 +380,12 @@
             <div class="col-md-6 col-lg-3">
                 <div class="card bg-light">
                     <div class="card-body text-center">
-                        <img class="rounded-circle mb-3" src="img/pic-1.png" alt="">
+                        <img class="rounded-circle mb-3" src="img/pic-1.png" alt="" />
                         <h3 class="card-title mb-3">andrew flip</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, officiis? Architecto</p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                            officiis? Architecto
+                        </p>
                         <a href="#" class="i bi bi-twitter text-dark mx-1"></a>
                         <a href="#" class="i bi bi-facebook text-dark mx-1"></a>
                         <a href="#" class="i bi bi-linkedin text-dark mx-1"></a>
@@ -285,9 +396,12 @@
             <div class="col-md-6 col-lg-3">
                 <div class="card bg-light">
                     <div class="card-body text-center">
-                        <img class="rounded-circle mb-3" src="img/pic-4.png" alt="">
+                        <img class="rounded-circle mb-3" src="img/pic-4.png" alt="" />
                         <h3 class="card-title mb-3">elizabeth olsen</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, officiis? Architecto</p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                            officiis? Architecto
+                        </p>
                         <a href="#" class="i bi bi-twitter text-dark mx-1"></a>
                         <a href="#" class="i bi bi-facebook text-dark mx-1"></a>
                         <a href="#" class="i bi bi-linkedin text-dark mx-1"></a>
@@ -298,9 +412,12 @@
             <div class="col-md-6 col-lg-3">
                 <div class="card bg-light">
                     <div class="card-body text-center">
-                        <img class="rounded-circle mb-3" src="img/pic-3.png" alt="">
+                        <img class="rounded-circle mb-3" src="img/pic-3.png" alt="" />
                         <h3 class="card-title mb-3">jhon doa</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, officiis? Architecto</p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                            officiis? Architecto
+                        </p>
                         <a href="#" class="i bi bi-twitter text-dark mx-1"></a>
                         <a href="#" class="i bi bi-facebook text-dark mx-1"></a>
                         <a href="#" class="i bi bi-linkedin text-dark mx-1"></a>
@@ -308,7 +425,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- instructor section ends   -->
@@ -317,22 +433,29 @@
     <section class="p-5">
         <div class="container g-4">
             <div class="row">
-
                 <div class="col-md">
                     <h2 class="text-center">contact info</h2>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> <span class="fw-bold">location:</span> 50 main st Boston LA</li>
-                        <li class="list-group-item"><span class="fw-bold">enrollment phone:</span> 9990 3434 123</li>
-                        <li class="list-group-item"><span class="fw-bold">student phone:</span> 50 main st Boston LA</li>
-                        <li class="list-group-item"><span class="fw-bold">enrollment email:</span> frontend@mail.com</li>
-                        <li class="list-group-item"><span class="fw-bold">student Email:</span> student@mail.com</li>
-                      </ul>
+                        <li class="list-group-item">
+                            <span class="fw-bold">location:</span> 50 main st Boston LA
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">enrollment phone:</span> 9990 3434 123
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">student phone:</span> 50 main st Boston LA
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">enrollment email:</span> frontend@mail.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">student Email:</span> student@mail.com
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-md">
-                    <div id="map">
-                    </div>
+                    <div id="map"></div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -341,13 +464,13 @@
     <!-- footer section starts  -->
     <section class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
-            <p class="lead">copyright &copy 2021 frontend Bootcamp | all right reserved</p>
+            <p class="lead">
+                copyright &copy 2021 frontend Bootcamp | all right reserved
+            </p>
             <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
         </div>
     </section>
     <!-- footer section ends  -->
-
-
 
     <!-- bootstrap JS bundle  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -355,7 +478,7 @@
         crossorigin="anonymous"></script>
 
     <!-- mapbox JS link      -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
     <script src="script.js"></script>
 </body>
 
